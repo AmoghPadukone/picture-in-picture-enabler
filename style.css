@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  background-color: rgb(14, 23, 47);
+
+  background-color: #f0f0f0;
+}
+
+.title {
+  padding: 2% 0% 0 0%;
+  font-size: 3.75rem;
+}
+
+.source-heading,
+.preview-heading {
+  font-size: 2.3rem;
+  margin-top: 8%;
+}
+
+.soucre-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  /* transform: translateX(22px); */
+  padding-left: 10%;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(180px);
+  height: 100%;
+  width: 60px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 250px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+.final-container {
+  display: none;
+}
+
+.start-button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 3%;
+  padding: 3% 0;
+  letter-spacing: 0.2ch;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+
+  color: black;
+}
+.start-button:active {
+  transition: all 0.3s;
+
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
